@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="comp3350.goodhabits.Presentation.DetailActivity">
+
+    <LinearLayout
+        android:id="@+id/Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dv_name"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/name"
+                android:textColor="#009688"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <View
+                android:id="@+id/dv_type"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/message"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dv_notification_time_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notification_time"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dv_notification_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/notification_time"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/dv_start_date_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dv_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/start_date"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/dv_end_date_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/end_date"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dv_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/end_date"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/dv_days_passed_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/days_passed"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dv_days_passed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/days_passed"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/dv_checkins_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/days_checked_in"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dv_checkins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/checkins"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/dv_change_time_button"
+            android:text="@string/change_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:backgroundTint="#FFFFFF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#009688"
+            app:strokeWidth="2dp" />
+
+        <ProgressBar
+            android:id="@+id/rating_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="20"
+            android:max="66"
+            android:scaleY="3" />
+
+        <LinearLayout
+            android:id="@+id/dv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dv_progress_low"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/dv_progress_high"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/_66" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dv_check_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/check_in" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
