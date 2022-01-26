@@ -7,6 +7,6 @@ Good Habits is a habit-tracking application that can be used to develop good hab
 
 ## Features  
 
-Daily motivational qoutes to keep you motivated throughtout the day. | A detail view that shows you the goal progress. | A notification system to help you check in on your goals, on time.
+Daily qoutes to keep you motivated throughtout the day. | A detail view that shows you the goal progress. | A notification system to help you check in on your goals, in timely manner.
 :--------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------:
 ![Motivational Quotes](assets/motivation.png)  |  ![Rating](assets/rating.png) | ![Notifications](assets/noti.png)
