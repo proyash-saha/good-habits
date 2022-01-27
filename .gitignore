@@ -10,7 +10,7 @@
 # Java class files
 *.class
 
-# MacOS
+# MacOS mode
 .DS_Store
 
 # Generated files
